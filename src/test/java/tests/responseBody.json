@@ -1,0 +1,7 @@
+{
+    "id": "#ignore",
+	"name": "#string",
+	"email": "#string",
+	"gender": "male",
+	"status": "active"
+}
