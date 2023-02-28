@@ -1,7 +1,7 @@
 Feature: Karate configuration demo
 
   Background: 
-    * url baseURL
+    * url baseUrl
     * header Accept = 'Application/json'
 
   # Get with URl
