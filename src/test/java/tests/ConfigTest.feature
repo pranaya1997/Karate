@@ -24,4 +24,3 @@ Feature: Karate configuration demo
    When method post
    Then status 201
    And print response
-   

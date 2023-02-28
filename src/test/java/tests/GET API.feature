@@ -5,6 +5,7 @@ Feature: GET API Demo
     * header Accept = 'Application/json'
 
   # Get with URl
+  @way1
   Scenario: Get API way1
     Given url 'https://gorest.co.in/public/v2/users'
     When method GET
@@ -16,6 +17,7 @@ Feature: GET API Demo
     And print responseCookies
 
   # Get with Baground
+  @way2
   Scenario: Get API way2
     Given path ''
     When method GET
@@ -23,6 +25,7 @@ Feature: GET API Demo
     And print response
 
   # Get with path and param
+  @way3
   Scenario: Get API way3
     Given path ''
     And param page = 1
@@ -31,6 +34,7 @@ Feature: GET API Demo
     And print response
 
   # Get with Assertion
+  @way4
   Scenario: Get API way4
     Given path ''
     And param page = 1
