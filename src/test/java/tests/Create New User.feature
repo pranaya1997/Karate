@@ -8,9 +8,9 @@ Feature: Create new user in every post request without changing payload multiple
 
 Scenario: New User creation using post request
 Given url 'https://gorest.co.in/public/v2/users'
-And request reqBody
 And set reqBody.name = 'Pranay'+random
 And set reqBody.email = 'Pranay'+random+'@email.com'
+And request reqBody
 When method post
 Then status 201
 And print response
